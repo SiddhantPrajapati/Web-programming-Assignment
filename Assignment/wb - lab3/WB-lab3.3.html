@@ -1,0 +1,62 @@
+<!-- Simple Registration Form-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Book Buy Form</title>
+	</head>
+	<body>
+	<h1 align="Center">Book Buy Form</h1>
+		<center>
+		<form> 
+			<fieldset>
+				<legend>Book Buy Form</legend>
+			<table>
+				<tr>
+					<td colspan="2">
+						User Name : <input type="text" name="fname" value=""/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">Address :
+						<textarea name="description" value="Enter description here..." id="desc" rows="5" cols="55">
+						</textarea><br>
+					</td>
+					
+				</tr>
+				<tr>
+					<td colspan="2">
+					Subject :<input type="radio" name="sex" value="Maths"/> Maths
+				   <input type="radio" name="sub" value="Data Structure"/> Data Structure
+				   <input type="radio" name="sub" value="DBMS"/> Database Management System
+				   <input type="radio" name="sub" value="OOP"/> Object Oriented Programming
+				   <input type="radio" name="sub" value="Web DEvelopment"/> Web Development
+				   <input type="radio" name="sub" value="Software Engineering"/> Software Engineering<br>
+				   </td>	
+				</tr>
+				<tr>
+					<td colspan="2">Category :
+					<select name="category">
+						<option></option>
+						<option>J K Rowling</option>
+						<option>James Peterson</option>
+						<option>Stephen King</option>
+						<option>Leo tolstoy</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">Comment :
+						<textarea name="comment" value="Enter comment here..." id="desc" rows="5" cols="55">
+						</textarea><br>
+					</td>	
+				</tr>
+				<tr>
+					<td align="right"><input type="submit" name="submit" value="Buy"/></td>
+					<td><input type="reset" name="reset" value="RESET"/></td>
+				</tr>
+			</table>	
+			</fieldset>
+		</form>
+		</center>
+	</body>
+</html>

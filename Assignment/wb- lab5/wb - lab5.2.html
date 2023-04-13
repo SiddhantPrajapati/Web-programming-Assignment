@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>margin, padding and border property</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			* {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.h-1 {
+				margin : 20px;
+				border : 2px solid red;
+				border-left-style : dotted;
+			}
+			.h-2 {
+				margin-left : 20px;
+				border : 2px solid red;
+				border-right-style : dotted;
+			}
+			.h-3 {
+				margin-right : 20px;
+				border : 2px solid red;
+				border-top-style : dotted;
+			}
+			.h-4 {
+				margin-top : 20px;
+				border : 2px solid red;
+				border-bottom-style : dotted;
+			}
+			.h-5 {
+				margin-bottom : 20px;
+				border : 2px solid red;
+			}
+			.h-6 {
+				margin : 20px 25px 15px 10px;
+				border : 2px solid red;
+			}
+			div {
+				margin : 10px;
+				border : 2px solid green;
+			}
+			p {
+				background-color : yellow;
+				text-align : center;
+			}
+			
+			.p-1 {
+				padding : 15px;
+				border : 2px dotted blue;
+			}
+			.p-2 {
+				padding-left : 15px ;
+				border : 2px dotted blue;
+			}
+			.p-3 {
+				padding-right : 15px;
+				border : 2px solid blue;
+			}
+			.p-4 {
+				padding-top : 15px;
+				border-style : double dashed;
+				border-color : pink;
+				border-width : 4px;
+			}
+			.p-5 {
+				padding-bottom : 15px;
+				border : 2px dashed blue;
+			}
+			.p-6 {
+				padding : 15px;
+				border : 2px dotted blue;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Margin with border position property</p>
+		<!-- margin and border property -->
+		<div><h1 class="h-1">Hello World with margin</h1></div>
+		<div><h1 class="h-2">Hello World with margin left</h1></div>
+		<div><h1 class="h-3">Hello World with margin right</h1></div>
+		<div><h1 class="h-4">Hello World with margin top</h1></div>
+		<div><h1 class="h-5">Hello World with margin bottom</h1></div>
+		<div><h1 class="h-6">Hello World with margin shorthand</h1></div>
+		
+		<p>Padding and border property</p>
+		<!-- padding property -->
+		<div><h1 class="p-1">Hello World with padding</h1></div>
+		<div><h1 class="p-2">Hello World with padding left</h1></div>
+		<div><h1 class="p-3">Hello World with padding right with solid border</h1></div>
+		<div><h1 class="p-4">Hello World with padding top with dotted-dashed border</h1></div>
+		<div><h1 class="p-5">Hello World with padding bottom with dashed border</h1></div>
+		<div><h1 class="p-6">Hello World with padding shorthand with dotted border</h1></div>
+		
+	</body>
+</html>

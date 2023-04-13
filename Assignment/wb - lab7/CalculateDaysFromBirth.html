@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculate Days From Birthday</title>
+    <style>
+        h1 {
+            box-shadow: 5px 5px 5px gray;
+            text-align: center;
+            border-radius: 5px;
+        }
+        form {
+            margin: auto;
+            margin-top: 5px;
+            border: 2px solid gray;
+            text-align: center;
+        }
+        p {
+            background-color: azure;
+            text-align: center;
+        }
+        div {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Find no of Days from your birthday.</h1>
+    <p>this program find number of days from your birth date</p>
+    <form name="dateofbirth">
+        Enter your Birthday : <input type="date" name="birth" value="birth"/><br>
+        <input type="submit" onmouseover="transform()"/>
+    </form>
+    <br>
+    
+    No. of Days You spend:<div id="day"></div>
+    <!-- <div id="day12"></div> -->
+    Number of days remainning to your birthday : <div id="remain"></div>
+    <script>
+        function transform(){
+            Birthday = document.dateofbirth;
+            var day1 = new Date(Birthday.birth.value);
+            var day2 = new Date();
+            var dd = day1.getDate();
+            var mm = day1.getMonth()+1;
+            var yy = day2.getFullYear();
+            var day3 = new Date(mm+"/"+dd+"/"+yy);
+
+            if((day3-day2)<0){
+                yy++;
+                day3 = new Date(mm+"/"+dd+"/"+yy);
+                document.getElementById("remain").innerHTML = Math.floor((day3-day2)/(1000*60*60*24))+1;
+            }
+            else if((day3-day2)==0){
+                document.getElementById("remain").innerHTML = 0;
+            }
+            else {
+                document.getElementById("remain").innerHTML = Math.floor((day3-day2)/(1000*60*60*24))+1;
+            }
+            
+            document.getElementById("day").innerHTML = Math.floor((day2-day1)/(1000*60*60*24));
+            //document.getElementById("day12").innerHTML = dd;
+            //document.getElementById("remain").innerHTML = day3 ;
+        }
+    </script>
+</body>
+</html>

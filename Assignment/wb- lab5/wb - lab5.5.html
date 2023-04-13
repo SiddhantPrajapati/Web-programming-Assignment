@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style> 
+        #changebg {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        }
+        #back {
+            width: 500px;
+            height: 500px;
+            background-color: aquamarine;
+            position: relative;
+            animation-iteration-count: infinite;
+        }
+        #rotate {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: rotation;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        #alternate {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: rotation;
+            animation-duration: 10s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+        }
+        @keyframes rotation {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: green; left: 400px; top: 0px;}
+            50% {background-color: blue; left: 400px; top: 400px;}
+            75% {background-color: yellow; left: 0px; top: 400px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+
+        @keyframes example {
+        from {background-color: red;}
+        to {background-color: yellow;}
+        }
+
+        #move {
+            color: blue;
+            background-color: aquamarine;
+            animation-name: slide;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes slide {
+            from{margin-left: 0%;}
+            to{margin-left: 80%;}
+        }
+
+
+        @keyframes transition {
+            0% {background-color: red;}
+            25% {background-color: green;}
+            50% {background-color: blue;}
+            75% {background-color: skyblue;}
+            100% {background-color: yellow;}
+        }
+
+        #trans {
+            width: 100px;
+            height: 150px;
+            animation-duration: 10s;
+            animation-name: transition;
+            animation-iteration-count: infinite;
+        }
+
+        #div1 {
+            animation-timing-function: linear;
+            animation-name : slide;
+            animation-duration: 10s;
+            background-color: red;
+            color: white;
+            animation-iteration-count: infinite;
+        }
+        #div2 {animation-timing-function: ease;
+            animation-name : slide;
+            animation-duration: 10s;
+            background-color: red;
+            color: white;
+            animation-iteration-count: infinite;
+        }
+        #div3 {animation-timing-function: ease-in;
+            animation-name : slide;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            background-color: red;
+            color: white;
+        }
+        #div4 {animation-timing-function: ease-out;
+            animation-name : slide;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            background-color: red;
+            color: white;
+        }
+        #div5 {animation-timing-function: ease-in-out;
+            animation-name : slide;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            background-color: red;
+            color: white;
+        }
+        
+        #shorthand {
+            position : fixed;
+            top: 10px;
+            background-color: black;
+            color: white;
+            animation : slide 10s linear 1s infinite alternate;            
+        }
+        </style>
+    </head>
+    <body>
+
+        <h1>CSS Animation</h1>
+        <h2>This animation change background color</h2>
+        <h2>This animation perform infinite time</h2>
+        <div id="changebg"></div>
+
+        <h2>this animation move text</h2>
+        <p id="move">Moving text</p>
+
+        <h2>transition effect in background</h2>
+        <div id="trans"></div>
+
+        <h2>Delay in animation</h2>
+        <p>Wait 2 sec to start animation</p>
+
+        <h2>moving square in big square</h2>
+        <div id="back">
+            <div id="rotate"></div>
+        </div>
+
+        <h2>below animation run forward in backward direction</h2>
+        <div id="back">
+            <div id="alternate"></div>
+        </div>
+        <h2>See the defferace of speed of below elements</h2>
+        <span id="div1">Hello World : linear</span><br>
+        <span id="div2">Hello World : ease</span><br>
+        <span id="div3">Hello World : ease-in</span><br>
+        <span id="div4">Hello World : ease-out</span><br>
+        <span id="div5">Hello World : ease-in-out</span>
+        
+        <h2>CSS shorthand property</h2>
+        <div>
+            <span id="shorthand"> Siddhant Prajapati </span>
+        </div>
+    </body>
+</html>
+
+

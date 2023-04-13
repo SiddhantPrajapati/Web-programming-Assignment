@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Css Gradient </title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			h1 {
+				text-align : center;
+				}
+			h2 {
+				text-align : center;
+				}
+			#linear {
+				height: 500px;
+				vertical-align: center;
+				background-color: red; /* For browsers that do not support gradients */
+				background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+			}
+			#radial {height: 500px;
+				width: 100%;
+				background-color: red; /* For browsers that do not support gradients */
+				background-image: repeating-radial-gradient(red, orange 10%, yellow 15%, green 20%, blue 25%, indigo 20%, violet 15%);
+			}
+			#conic {height: 500px;
+				background-color: red; /* For browsers that do not support gradients */
+				background-image: conic-gradient( red, orange, yellow, green, blue, indigo, violet);
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<h1> CSS gradient Property </h1>
+		<h2> Linear Gradiant </h2>
+		<div id="linear">Axelarate</div>
+		<h2> Radial Gradiant </h2>
+		<div id="radial">Alex_Pro</div>
+		<h2> Conic Gradiant </h2>
+		<div id="conic">Ajay Rajbhar</div>
+	</body>
+</html>

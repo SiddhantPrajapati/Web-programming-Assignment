@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program - 5</title>
+</head>
+<body>
+    <script>
+        let n = prompt("Enter the number of 2 digit:");
+        if(n.length == 2){
+            n = parseInt(n);
+            let dec = parseInt(n/10);
+            let unit = n%10;
+            document.write("Decimal:"+dec+"<br>Unit:"+unit);
+
+            document.write("<br>Answer:"+Math.pow(dec, unit));
+        }
+        else {
+            document.write("Enter valid number");
+        }
+    </script>
+</body>
+</html>

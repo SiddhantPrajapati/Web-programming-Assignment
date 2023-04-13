@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 3</title>
+</head>
+<body>
+    <script type="text/Javascript">
+        let word = prompt("Enter the word");
+        let sentence = "Thirsty dog show his image in the river , and understand that this is another dog.";
+        let myArray = sentence.split(" ");
+        let result = 0;
+        document.write("Array of Sentence:"+sentence+"<br>");
+        for(let i in myArray){
+            if(myArray[i] == word){
+                result = 1;
+                
+            }
+        }
+        if(result == 1) {
+            document.write(word + " is present");
+         } 
+         else {
+            document.write(word + " is not present");
+         }  
+    </script>
+</body>
+</html>

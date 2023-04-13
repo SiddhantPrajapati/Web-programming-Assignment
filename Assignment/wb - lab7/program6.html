@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program- 7</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head" onmouseover="this.style.color='red';">This is heading</h1>
+    <button onclick="change()">Change</button>
+    <button onclick="showDate()">Find Time</button><br>
+    <form id="colorBack">
+        <input type="button" name="red" value="Red" onclick="changeColor(red)">
+        <input type="button" name="green" value="Green" onclick="changeColor(green)">
+    </form>
+    <script>
+        function change(){
+            document.getElementById("head")= "Hello World";
+        }
+        let date = new Date();
+        function showDate(){
+            document.write(date);
+        }
+        function changeColor(str){
+            let element = document.getElementById("colorBack");
+            document.write(str.value);
+            document.body.style.backgroundColor = str.value; 
+        }
+    </script>
+</body>
+</html>

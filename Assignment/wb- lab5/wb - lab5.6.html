@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        :root {
+            --headerColor : blue;
+            --backGroundColor : white;
+            --fontColor : black;
+        }
+        h1 {
+            background-color: var(--headerColor);
+            color: var(--backGroundColor);
+            text-align: center;
+        }
+        p {
+            --fontColor : orange;
+            color: var(--fontColor);
+        }
+        #change {
+            --fontColor : red;
+            color: var(--fontColor);
+        }
+        body{
+            background-color: var(--backGroundColor);
+        }
+        div {
+            --backGroundColor : black;
+            --fontColor : white;
+            background-color: var(--backGroundColor);
+            color: var(--fontColor);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Variables</h1>
+    <p>Name : Siddhant Prajapati</p>
+    <p id="change">Enrollment No : 200470107068</p>
+    <p>Hello World</p>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni, ipsam eos earum voluptatibus harum nobis molestiae non iure est officia voluptas dolore, provident, distinctio recusandae. Corrupti omnis cum expedita?
+    </div>
+</body>
+</html>

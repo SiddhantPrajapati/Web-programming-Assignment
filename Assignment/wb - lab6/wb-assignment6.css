@@ -1,0 +1,153 @@
+header{
+    background-color: aqua;
+}
+h1 span {
+    margin: 0;
+    letter-spacing: -12px;
+    text-shadow: 1px rgb(223, 223, 223);
+}
+section {
+    margin: 0px 250px;
+}
+section h2 {
+    /* background-color: brown; */
+    margin: 0;
+}
+#upperline {
+    margin-bottom: 10px;
+}
+content {
+    border: 2px dotted red;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.image {
+    width: 200px;
+    height: auto;
+}
+.article {
+    display: inline;
+    width: 300px;
+    height: 400px;
+    vertical-align: top;
+    margin: 0px 20px;
+}
+form {
+    float: right;
+    background-color: rgb(243, 243, 243);
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+.uname {
+    text-align: right;
+    columns: 50;
+    width: 97%;
+}
+.left-content {
+    width: 60%;
+    height: auto;
+    float: left;
+    margin-bottom: 20px;
+}
+#right-content {
+    width: 40%;
+    height: 800px;
+    float: right;
+}
+.inside-content {
+    float: left;
+    width: 55%;
+    height: auto;
+    margin-left: 5%;
+}
+.image-part {
+    float: left;
+    width: 40%;
+    height: auto;
+}
+#day {
+    width: 20%;
+}
+#year {
+    width: 40%;
+}
+#captcha {
+    width: 100%;
+    height: auto;
+}
+#gender {
+    width: 98%;
+}img {
+    width : 200px;
+    height : 200px;
+}
+.blue {
+    color: rgb(41, 41, 255);
+}
+.red {
+    color: rgb(253, 40, 40);
+}
+.yellow {
+    color: rgb(248, 248, 70);
+}
+.green {
+    color: rgb(21, 204, 21);
+}
+#next {
+    background-color: rgb(71, 71, 243);
+    color: white;
+    float: right;
+    position: relative;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    padding-left: 50px;
+    border-bottom: 0.5px solid rgb(202, 202, 202);
+    font-size: 50px;
+}
+.c1 {
+    color: rgb(43, 43, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+.c2 {
+    color: rgb(247, 57, 57);
+    font-family: 'Times New Roman', Times, serif;
+}
+.c3 {
+    color: rgb(255, 255, 97);
+    font-family: 'Times New Roman', Times, serif;
+}
+.c4 {
+    color: rgb(61, 255, 61);
+    font-family: 'Times New Roman', Times, serif;
+}
+#center {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: block;
+    border: 1px solid black; 
+}
+#head2 {
+    color: red;
+}
+#signin {
+    position: relative;
+    left: 80%;
+    vertical-align: center;
+}
+#content1 {
+    width: 300px;
+    height: 250px;
+    background-color: aqua;
+    display: block;
+    float: left;
+    position: top right ;
+}
+.name {
+    width: 46%;
+}
